@@ -1,0 +1,110 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-fake-transactions
+      author: transaction-team
+      changes:
+        - insert:
+            tableName: transaction
+            columns:
+              - column:
+                  name: transaction_id
+                  value: '10'
+              - column:
+                  name: date
+                  value: '2023-09-05'
+              - column:
+                  name: amount
+                  value: '100.00'
+              - column:
+                  name: transaction_type
+                  value: 'Credit'
+              - column:
+                  name: description
+                  value: 'Payment'
+              - column:
+                  name: account_id
+                  value: '1' # Use the account_id corresponding to the user
+        - insert:
+            tableName: transaction
+            columns:
+              - column:
+                  name: transaction_id
+                  value: '11'
+              - column:
+                  name: date
+                  value: '2023-09-06'
+              - column:
+                  name: amount
+                  value: '50.00'
+              - column:
+                  name: transaction_type
+                  value: 'Debit'
+              - column:
+                  name: description
+                  value: 'Withdrawal'
+              - column:
+                  name: account_id
+                  value: '2' # Use the account_id corresponding to the user
+        - insert:
+            tableName: transaction
+            columns:
+              - column:
+                  name: transaction_id
+                  value: '12'
+              - column:
+                  name: date
+                  value: '2023-09-07'
+              - column:
+                  name: amount
+                  value: '200.00'
+              - column:
+                  name: transaction_type
+                  value: 'Credit'
+              - column:
+                  name: description
+                  value: 'Refund'
+              - column:
+                  name: account_id
+                  value: '3' # Use the account_id corresponding to the user
+        - insert:
+            tableName: transaction
+            columns:
+              - column:
+                  name: transaction_id
+                  value: '13'
+              - column:
+                  name: date
+                  value: '2023-09-08'
+              - column:
+                  name: amount
+                  value: '30.00'
+              - column:
+                  name: transaction_type
+                  value: 'Debit'
+              - column:
+                  name: description
+                  value: 'Purchase'
+              - column:
+                  name: account_id
+                  value: '4' # Use the account_id corresponding to the user
+        - insert:
+            tableName: transaction
+            columns:
+              - column:
+                  name: transaction_id
+                  value: '14'
+              - column:
+                  name: date
+                  value: '2023-09-09'
+              - column:
+                  name: amount
+                  value: '500.00'
+              - column:
+                  name: transaction_type
+                  value: 'Credit'
+              - column:
+                  name: description
+                  value: 'Payment'
+              - column:
+                  name: account_id
+                  value: '5' # Use the account_id corresponding to the user

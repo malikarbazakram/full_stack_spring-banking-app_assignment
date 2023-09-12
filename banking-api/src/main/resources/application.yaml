@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: bankingapp
+  datasource:
+    url: ${bankingapp.db.url}
+    username: ${bankingapp.db.username}
+    password: ${bankingapp.db.password}
+  profiles:
+    include: local
+#    include: dev
+

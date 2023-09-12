@@ -1,0 +1,32 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+#Show login end point in swagger
+springdoc:
+  show-login-endpoint: true
+
+logging:
+  level:
+    sql: debug
+    '{com.redmath.onlinebankingapp}': debug
+  pattern:
+    level: "%5p ${HOSTNAME}"
+

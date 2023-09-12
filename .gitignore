@@ -1,0 +1,18 @@
+# Ignore files in the root directory
+/target/
+/.idea/
+/.vscode/
+*.iml
+
+# Ignore files in the 'bank-api' directory, except 'src' and 'pom.xml'
+/banking-api/*
+!/banking-api/src/
+!/banking-api/pom.xml
+
+# Ignore files in the 'bank-ui' directory, except 'package.json', 'src', and 'pom.xml'
+/banking-ui/*
+!/banking-ui/fonts/
+!/banking-ui/public/
+!/banking-ui/package.json
+!/banking-ui/src/
+!/banking-ui/pom.xml

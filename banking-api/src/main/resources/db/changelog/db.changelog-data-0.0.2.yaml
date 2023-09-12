@@ -1,0 +1,95 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-fake-balances
+      author: balance-team
+      changes:
+        - insert:
+            tableName: balance
+            columns:
+              - column:
+                  name: balance_id
+                  value: '10'
+              - column:
+                  name: date
+                  value: '2023-09-05'
+              - column:
+                  name: amount
+                  value: '1000.00'
+              - column:
+                  name: balance_type
+                  value: 'Credit'
+              - column:
+                  name: account_id
+                  value: '1' # Use the account_id corresponding to the user
+        - insert:
+            tableName: balance
+            columns:
+              - column:
+                  name: balance_id
+                  value: '11'
+              - column:
+                  name: date
+                  value: '2023-09-06'
+              - column:
+                  name: amount
+                  value: '1500.00'
+              - column:
+                  name: balance_type
+                  value: 'Debit'
+              - column:
+                  name: account_id
+                  value: '2' # Use the account_id corresponding to the user
+        - insert:
+            tableName: balance
+            columns:
+              - column:
+                  name: balance_id
+                  value: '12'
+              - column:
+                  name: date
+                  value: '2023-09-07'
+              - column:
+                  name: amount
+                  value: '2000.00'
+              - column:
+                  name: balance_type
+                  value: 'Credit'
+              - column:
+                  name: account_id
+                  value: '3' # Use the account_id corresponding to the user
+        - insert:
+            tableName: balance
+            columns:
+              - column:
+                  name: balance_id
+                  value: '13'
+              - column:
+                  name: date
+                  value: '2023-09-08'
+              - column:
+                  name: amount
+                  value: '500.00'
+              - column:
+                  name: balance_type
+                  value: 'Debit'
+              - column:
+                  name: account_id
+                  value: '4' # Use the account_id corresponding to the user
+        - insert:
+            tableName: balance
+            columns:
+              - column:
+                  name: balance_id
+                  value: '14'
+              - column:
+                  name: date
+                  value: '2023-09-09'
+              - column:
+                  name: amount
+                  value: '3000.00'
+              - column:
+                  name: balance_type
+                  value: 'Credit'
+              - column:
+                  name: account_id
+                  value: '5' # Use the account_id corresponding to the user

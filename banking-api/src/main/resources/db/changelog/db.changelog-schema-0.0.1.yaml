@@ -1,0 +1,53 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-account
+      author: account team
+      changes:
+        - createTable:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: username
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: password
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: email
+                  type: varchar(255)
+              - column:
+                  name: address
+                  type: varchar(255)
+              - column:
+                  name: role
+                  type: varchar(255)
+        - addPrimaryKey:
+            tableName: account
+            columnNames: id
+            constraintName: account_pk
+        - addAutoIncrement:
+            tableName: account
+            columnName: id
+            startWith: 10
+            incrementBy: 1
+            columnDataType: bigint
+            generationType: ALWAYS
+            defaultOnNull: false
+        - createIndex:
+            tableName: account
+            indexName: account_ix_01
+            columns:
+              - column:
+                  name: username

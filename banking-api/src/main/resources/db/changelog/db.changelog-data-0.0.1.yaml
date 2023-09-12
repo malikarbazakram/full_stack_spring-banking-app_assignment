@@ -1,0 +1,149 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-fake-accounts
+      author: account-team
+      changes:
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  value: '1'
+              - column:
+                  name: username
+                  value: 'user1'
+              - column:
+                  name: password
+                  value: '{noop}password1'
+              - column:
+                  name: name
+                  value: 'John Doe'
+              - column:
+                  name: email
+                  value: 'john.doe@example.com'
+              - column:
+                  name: address
+                  value: '123 Main St'
+              - column:
+                  name: role
+                  value: 'user'
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  value: '2'
+              - column:
+                  name: username
+                  value: 'user2'
+              - column:
+                  name: password
+                  value: '{noop}password2'
+              - column:
+                  name: name
+                  value: 'Jane Smith'
+              - column:
+                  name: email
+                  value: 'jane.smith@example.com'
+              - column:
+                  name: address
+                  value: '456 Elm St'
+              - column:
+                  name: role
+                  value: 'user'
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  value: '3'
+              - column:
+                  name: username
+                  value: 'user3'
+              - column:
+                  name: password
+                  value: '{noop}password3'
+              - column:
+                  name: name
+                  value: 'Bob Johnson'
+              - column:
+                  name: email
+                  value: 'bob.johnson@example.com'
+              - column:
+                  name: address
+                  value: '789 Oak St'
+              - column:
+                  name: role
+                  value: 'user'
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  value: '4'
+              - column:
+                  name: username
+                  value: user4
+              - column:
+                  name: password
+                  value: '{noop}password4'
+              - column:
+                  name: name
+                  value: 'Alice Williams'
+              - column:
+                  name: email
+                  value: 'alice.williams@example.com'
+              - column:
+                  name: address
+                  value: '101 Pine St'
+              - column:
+                  name: role
+                  value: 'user'
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  value: '5'
+              - column:
+                  name: username
+                  value: 'user5'
+              - column:
+                  name: password
+                  value: '{noop}password5'
+              - column:
+                  name: name
+                  value: 'Eve Brown'
+              - column:
+                  name: email
+                  value: 'eve.brown@example.com'
+              - column:
+                  name: address
+                  value: '202 Cedar St'
+              - column:
+                  name: role
+                  value: 'user'
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  value: '10000'
+              - column:
+                  name: username
+                  value: 'admin'
+              - column:
+                  name: password
+                  value: '{noop}admin'
+              - column:
+                  name: name
+                  value: 'admin'
+              - column:
+                  name: email
+                  value: 'admin@example.com'
+              - column:
+                  name: address
+                  value: 'admin hu yar'
+              - column:
+                  name: role
+                  value: 'ROLE_ADMIN'
